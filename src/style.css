@@ -3,7 +3,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 a {
-    color: rgb(114, 2, 64);
+    color: hsl(198, 88%, 84%);
 }
 .container {
     margin: 120px auto;
