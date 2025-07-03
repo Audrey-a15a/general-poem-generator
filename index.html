@@ -13,22 +13,22 @@
     </header>
 
     <main>
-<form id="poems-generator-form">
+  <div class="form-container">
+<form id="poem-generator-form">
     <input 
     type="text" placeholder="Enter the topic of the poem"
     autofocus
     required
     autocomplete="off"
     class="instruction"
+    id="user-instructions"
     />
     
     <input type="submit" class="submit-button"/>
 </form>
-<div class="poem">
-    The poem will go here
-    <br/>
-    The poem will go here
-</div>
+<div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
     </main>
 
     <footer> 
@@ -40,6 +40,7 @@
         <a href="https://poems-generator-pp.netlify.app" target="_blank"> hosted on Netlify</a>
     </footer>
     </div>
+
     <script src="src/index.js"></script>
 </body>
 </html>
