@@ -8,18 +8,18 @@ function displayQuote(response) {
   });
 }
 
-function generateQuote(event) {
+function generatepoem(event) {
   event.preventDefault();
 
   let userInputElement = document.querySelector("#user-input");
 
   let apiKey = "1894f4b60349tcab94fb26933d94a5o1";
-  let prompt = `Write me a motivational quote about the topic ${userInputElement.value}.`;
+  let prompt = `Write me a  quote about the topic ${userInputElement.value}.`;
   let context =
-    "You are an AI assistant who likes to write unique one-sentence motivational quotes about specific topics.";
+    "You are an AI assistant who likes to write unique one-sentence quotes about specific topics.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let quoteElement = document.querySelector("#quote");
+  let quoteElement = document.querySelector("#poem");
   quoteElement.classList.remove("hidden");
   quoteElement.innerHTML = `<span class="blink">Generating a quote to help motivate you...</span>`;
 
@@ -27,4 +27,4 @@ function generateQuote(event) {
 }
 
 let formElement = document.querySelector("#quote-generator-form");
-formElement.addEventListener("submit", generateQuote);
+formElement.addEventListener("submit", generatepoem);
