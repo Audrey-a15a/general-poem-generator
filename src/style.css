@@ -1,6 +1,6 @@
 body {
-    background-color: #bbf5f5;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #a5c2b0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 a {
     color: hsl(198, 96%, 51%);
@@ -61,6 +61,13 @@ form {
     border-radius: 50px;
     padding: 14px 24px;
 
+}
+
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #a5c2b0;
+  color: #36453b;
 }
 
 .poem {
