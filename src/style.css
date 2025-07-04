@@ -1,6 +1,6 @@
 body {
     background-color: #a5c2b0;
-    font-family: fantasy;
+    font-family: "Ubuntu Mono", ui-sans-serif, system-ui, sans-serif;
 }
 a {
     color: hsl(198, 96%, 51%);
